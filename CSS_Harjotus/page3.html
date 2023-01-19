@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+
+    <style>
+        #kärpät-area {
+            color: orange;
+            background-color: black;
+            width: 300px;
+            float: left;
+            /* margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+            */
+            margin: 10px 20px 30px 40px;
+            padding: 25px 5px 50px 50px; /*tekstin erotus reunoista*/
+            border: 20px white dotted;
+            border-radius: 50%;
+            
+        }
+
+        #tappara-area {
+            color: orange;
+            background-color: blue;
+            width: 150px;
+            float: left;
+            padding: 10px 10px 10px 10px;
+            border-radius: 20%;
+
+        }
+
+        .clear-float {
+            clear: both;
+        }
+
+        .font {
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+
+      
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="kärpät-area">
+        <h1>Kärpät</h1>
+        <p>Kun Kärpät pelaa niin tolpissa
+            On meillä taas moltsu tai kohdalta pois
+            Kun vielä lätkä säkkiä heiluttaa
+            Niin kotiin pisteet taas jäädä saa</p>
+        </div>
+        <div id="tappara-area" class="font">
+            <h1>Tappara</h1>
+            <p>Tappara vois imeä munaa</p>
+        </div>
+
+        <div class="clear-float"></div>
+        <h1>This is not floating</h1>
+        <h1>This is not floating</h1>
+</body>
+</html>

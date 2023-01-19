@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+
+    <!--<link rel="stylesheet" href="style.css">-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        h1{
+            color: blue;
+        }
+        p{
+
+            color:green;
+        }
+
+        /* class */
+        .red {
+            color:red;
+        }
+        .larger {
+            font-size: 24px;
+        }
+
+        /* id */
+        #green {
+            color:green;
+        }
+
+        h1 {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: right;
+        }
+
+        p {
+            font-family: 'Explora', cursive;
+            font-size: 200%;
+            font-weight:bolder;
+        }
+
+        a:hover
+        {
+            border: 10px black dotted;
+            text-decoration:line-through;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!--This is a comment
+    <h1 style="color:pink;">This is a Heading</h1>
+    <p style="color:yellowgreen; font-size:24px;">Lorem ipsum is just some dummy text used in print for layouts</p>
+    -->
+
+    <h1 class="red">This is a Heading</h1>
+    <p class="red larger">Lorem ipsum is just some dummy text used in print for layouts</p>
+    <h1 id="green">This is a Heading</h1>
+    <p>Lorem ipsum is just some dummy text used in print for layouts</p>
+    <p>This is <span class="red"> red</span></p>
+
+    <p><a href="www.google.com">GOOGLE</a></p>
+
+</body>
+</html>
