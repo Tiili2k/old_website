@@ -3,18 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+    #background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(8px);
+    z-index: -1;
+    }
+
+    .grid-container{
+            
+            color: white;
+            display: grid;
+            grid-template-rows:50px;
+            grid-template-columns: 25% 25% 25%;
+            justify-content: center;
+            align-content:flex-start;
+            height: 300px;
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            grid-template-areas: 
+            'header header header header header header'
+            'menu article article article links links'
+            'footer footer footer footer footer footer'
+        ;
+        }
+        .grid-item{
+            margin: 5px;
+            border-radius: 10px;
+            background-color: greenyellow;
+            text-align: center;
+            font-size: 35px;
+            width: 50%;
+        }
+
+        header {grid-area: header;}
+        #menu{ grid-area:menu; }
+        article { grid-area: article;}
+        #links {grid-area: links;}
+        footer {grid-area: footer;}
+
+        header,
+        #menu,
+        article,
+        #links,
+        footer {
+        text-align:center ;
+        padding: 20px 0;
+        font-size: 25px;
+        }
+
+        a:link {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+
 </head>
-<body>
-    <center>
-    <h1>Jani Tiiliharju</h1>
-    <p>Oulusta muuttanut TAMKIN Tietotekniikkaopiskelija.</p>
+<body> 
+   <video autoplay muted loop id="background">
+        <source src="material/Porch.mp4" type="video/mp4">
+      </video>
 
-   <img src="https://crop.kaleva.fi/Jmn6HJ8yDYv25uK0dHSSqOjMgXc=/2600x0/smart/https%3A//lorien-media-prod.s3.amazonaws.com/migration/kalevafi/default/919eab36-2a86-11e1-9cf1-12314303c108/original-302006-4326754_1D2105655.jpg" width="400" height="300">
+      <div class="grid-container">
+        <header> Juhanin Huumekauppa
+            <nav class="navbar">
+                <a href="#">Koti</a>
+                <a href="#">Tietoa yrityksestä</a>
+                <a href="#">Yhteystiedot</a>
+            </nav>
+        </header>
 
-   <br>
-   <p>blaa blaa blaa</p>
-   </center>
+
 </body>
 </html>
